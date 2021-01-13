@@ -2,7 +2,7 @@
 #+ endpoint_in_url: False
 #+ transform: {
 #+     "band": "?band",
-#+     "band_name": "?band_label",
+#+     "band_name": "?label",
 #+     "$anchor": "band"
 #+   }
 
@@ -11,7 +11,7 @@ PREFIX dbr: <http://dbpedia.org/resource/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?band ?band_label { 
+SELECT ?band (STR(?band_label) AS ?label)  { 
     ?band rdf:type dbo:Band ;
           dbo:genre dbr:Hard_Rock ;
           rdfs:label ?band_label .
