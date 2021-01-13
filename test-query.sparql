@@ -1,7 +1,7 @@
 #+ endpoint: http://dbpedia.org/sparql
 #+ endpoint_in_url: False
 #+ transform: {
-#+     "band": "?band"
+#+     "band": "?band",
 #+     "band_name": "?band_label"
 #+   }
 
