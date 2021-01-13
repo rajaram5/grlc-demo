@@ -1,5 +1,8 @@
 #+ endpoint: http://dbpedia.org/sparql
 #+ endpoint_in_url: False
+#+ transform: {
+#+     "band_name": "?band_label"
+#+   }
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbr: <http://dbpedia.org/resource/>
