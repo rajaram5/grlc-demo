@@ -2,7 +2,8 @@
 #+ endpoint_in_url: False
 #+ transform: {
 #+     "band": "?band",
-#+     "band_name": "?band_label"
+#+     "band_name": "?band_label",
+#+     "$anchor": "band"
 #+   }
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
