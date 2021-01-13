@@ -15,4 +15,5 @@ SELECT ?band ?band_label {
     ?band rdf:type dbo:Band ;
           dbo:genre dbr:Hard_Rock ;
           rdfs:label ?band_label .
+FILTER (lang(?band_label) = 'en')
 }
